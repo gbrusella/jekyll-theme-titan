@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}" class="titan-on">
+
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  {% include background.html %}
+  {% include header.html %}
+  {% unless site.titan.controls == false %}{% include controls.html %}{% endunless %}
+  <main class="site-main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/titan-bg.js' | relative_url }}" defer></script>
+</body>
+
+</html>

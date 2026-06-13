@@ -1,0 +1,7 @@
+{% assign t = site.titan %}
+<canvas id="titan"
+  data-shape="{{ t.shape | default: 'overlay' }}"
+  data-motion="{{ t.motion | default: 'sheet' }}"
+  data-relax="{{ t.relax | default: 2 }}"
+  data-cell="{{ t.cell | default: 66 }}"></canvas>
+<div class="titan-vignette"></div>

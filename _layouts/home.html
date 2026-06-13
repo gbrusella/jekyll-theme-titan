@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<section class="hero">
+  <p class="hero-kicker">{{ site.hero.kicker | default: 'Augmentation Online' }}</p>
+  <h1 class="hero-title">{{ site.hero.title | default: site.title }}</h1>
+  <p class="hero-tagline">{{ site.hero.tagline | default: site.description }}</p>
+</section>
+
+{% if content != '' %}<div class="panel">{{ content }}</div>{% endif %}
+
+{% if site.posts.size > 0 %}
+<div class="panel" style="margin-top:2rem">
+  <h2>Latest</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit: 5 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <div class="post-meta">{{ post.date | date: '%b %-d, %Y' }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

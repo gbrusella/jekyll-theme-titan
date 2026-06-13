@@ -1,0 +1,6 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+{% assign desc = page.description | default: site.description %}
+{% if desc %}<meta name="description" content="{{ desc }}">{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/titan.css' | relative_url }}">

@@ -1,0 +1,10 @@
+<header class="site-header">
+  <a class="site-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <nav class="site-nav">
+    {% for item in site.nav %}
+    <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.name }}</a>
+    {% endfor %}
+    <button class="titan-toggle" type="button" data-titan-toggle aria-pressed="true"
+            title="Toggle animated background"></button>
+  </nav>
+</header>

@@ -1,0 +1,27 @@
+title: TITAN
+description: A dark, gold-plated tessellation theme.
+lang: en
+
+# Animated background — see README for all values.
+titan:
+  shape: overlay    # voronoi | triangles | overlay | hexagons | squares | rhombille | hcp | fcc | bcc | cubic
+  motion: sheet     # bulge | sheet  (2D shapes only)
+  relax: 2          # Lloyd relaxation passes (0 = raw Poisson)
+  cell: 66          # plate / lattice spacing in px
+  controls: true    # show the visitor-facing settings panel (model + cell size)
+
+hero:
+  kicker: Augmentation Online
+  title: TITAN
+  tagline: Adaptive nanoceramic shield — reactive plating engaged
+
+nav:
+  - name: Posts
+    url: /posts/
+  - name: About
+    url: /about/
+
+# default layout for posts
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post" }
