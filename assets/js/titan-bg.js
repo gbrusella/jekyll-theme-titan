@@ -742,7 +742,7 @@
 
   function defaultOn() {
     try { var v = localStorage.getItem(KEY); if (v === 'on') return true; if (v === 'off') return false; } catch (e) {}
-    return !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    return true; // default ON; visitors can toggle off via the header button
   }
   function persistOn(v) { try { localStorage.setItem(KEY, v ? 'on' : 'off'); } catch (e) {} }
   function loadOverrides() { try { return JSON.parse(localStorage.getItem(CFG_KEY) || '{}') || {}; } catch (e) { return {}; } }
