@@ -143,8 +143,9 @@ body {
 }
 .hero-title {
   font-weight: 700;
-  font-size: clamp(48px, 30vh, 180px);
+  font-size: clamp(48px, 14vw, 180px);
   line-height: .9;
+  padding-bottom: 0.15em;
   letter-spacing: .04em;
   background: linear-gradient(180deg, #fff6d8 0%, var(--gold-bright) 28%, var(--gold) 55%, var(--gold-deep) 100%);
   -webkit-background-clip: text; background-clip: text;
