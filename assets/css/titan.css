@@ -134,7 +134,8 @@ body {
   padding: 4rem 1.5rem;
 }
 .hero-kicker {
-  font-size: clamp(10px, 1.4vw, 13px);
+  font-size: clamp(12px, 1.8vw, 16px);
+  font-weight: 700;
   letter-spacing: .6em;
   text-indent: .6em;
   color: rgba(212,175,55,.7);
