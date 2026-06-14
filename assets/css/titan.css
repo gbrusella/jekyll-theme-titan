@@ -192,6 +192,52 @@ body {
 
 .post-meta { color: var(--text-dim); font-family: var(--mono); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
 
+/* --- author card (below post content) --- */
+.author-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.author-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold-deep);
+  flex-shrink: 0;
+}
+.author-name {
+  font-weight: 700;
+  color: var(--gold-bright);
+  font-size: .9rem;
+  letter-spacing: .06em;
+}
+.author-bio {
+  font-size: .85rem;
+  color: var(--text-dim);
+  margin: .3rem 0 .55rem;
+  line-height: 1.55;
+}
+.author-links {
+  display: flex;
+  gap: .9rem;
+  flex-wrap: wrap;
+}
+.author-links a {
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+  border: none;
+  transition: color .2s;
+}
+.author-links a:hover { color: var(--gold-bright); }
+
 /* --- post list --- */
 .post-list { list-style: none; padding: 0; }
 .post-list li { padding: 1.1rem 0; border-bottom: 1px solid var(--line); }

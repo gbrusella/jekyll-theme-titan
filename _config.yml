@@ -2,6 +2,16 @@ title: TITAN
 description: A dark, gold-plated tessellation theme.
 lang: en
 
+author:
+  name: Your Name
+  bio: A short sentence about yourself.
+  avatar:          # path to an image, e.g. /assets/img/avatar.jpg (leave blank to hide)
+  links:
+    - label: GitHub
+      url: https://github.com/you
+    # - label: Twitter
+    #   url: https://twitter.com/you
+
 # Animated background — see README for all values.
 titan:
   shape: overlay    # voronoi | triangles | overlay | hexagons | squares | rhombille | hcp | fcc | bcc | cubic

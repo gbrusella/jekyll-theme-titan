@@ -1,0 +1,20 @@
+{% if site.author.name %}
+<div class="author-card">
+  {% if site.author.avatar and site.author.avatar != '' %}
+  <img class="author-avatar" src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}">
+  {% endif %}
+  <div class="author-info">
+    <div class="author-name">{{ site.author.name }}</div>
+    {% if site.author.bio and site.author.bio != '' %}
+    <p class="author-bio">{{ site.author.bio }}</p>
+    {% endif %}
+    {% if site.author.links and site.author.links.size > 0 %}
+    <div class="author-links">
+      {% for link in site.author.links %}
+      <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
